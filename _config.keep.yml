@@ -1,0 +1,244 @@
+# ---------------------------------------------------------------------------------------
+#  Your basic info
+# ---------------------------------------------------------------------------------------
+base_info:
+  # Your website title
+  title: Keep Theme
+
+  # Your blog author name
+  author: Keep Team
+
+  # Your website url
+  url: https://keep.xpoet.cn/
+
+  # Your website logo
+  logo_img: /images/logo.svg
+
+
+# ---------------------------------------------------------------------------------------
+# Theme style settings
+# ---------------------------------------------------------------------------------------
+style:
+  # Theme primary color
+  primary_color: '#0066CC'
+
+  # Avatar (You can use local image or image external link)
+  avatar: /images/avatar.svg
+
+  # Favicon (You can use local image or image external link)
+  favicon: /images/logo.svg
+
+  # Image align position, value: left | center
+  article_img_align: left
+
+  # Left side width
+  left_side_width: 260px
+
+  # Content area max width
+  content_max_width: 920px
+
+  # Mouse hover
+  hover:
+    shadow: true
+    scale: false
+
+  # First screen settings
+  first_screen:
+    enable: false
+    background_img: /images/bg.svg
+    description: Keep writing and Keep loving.
+
+  # Scroll style settings
+  scroll:
+    progress_bar:
+      enable: true
+    percent:
+      enable: false
+
+
+# ---------------------------------------------------------------------------------------
+# Social contact link
+# ---------------------------------------------------------------------------------------
+social_contact:
+  enable: true
+  links:
+    github: https://github.com/XPoet
+    weixin: https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/FE-Cheerleaders/fe-cheerleaders-poster.2a69nu5y9zms.png
+    qq:              # your QQ QR-Code URL
+    weibo:           # your WeiBo URL
+    zhihu:           # your ZhiHu URL
+    twitter:         # your Twitter URL
+    facebook:        # your Facebook URL
+    email: i@xpoet.cn
+
+
+# ---------------------------------------------------------------------------------------
+# Navigation menu
+# ---------------------------------------------------------------------------------------
+menu:
+  Home: /
+  # Archives: /archives
+  Categories: /categories
+  Tags: /tags
+  # Changelog: /changelog
+  # Links: /links
+  # About: /about
+  # ......
+
+
+# ---------------------------------------------------------------------------------------
+# Home page article block display settings
+# ---------------------------------------------------------------------------------------
+home_article:
+  category:
+    enable: true      # show category in home page article block
+    limit: 3          # max number of categories shown in home page article block
+  tag:
+    enable: true      # show tags in home page article block
+    limit: 5          # max number of tags shown in home page article block
+
+
+# ---------------------------------------------------------------------------------------
+# Post page Settings
+# ---------------------------------------------------------------------------------------
+post:
+  # Post word count
+  # Dependencies: hexo-wordcount (npm install hexo-wordcount)
+  # See: https://github.com/willin/hexo-wordcount
+  word_count:
+    enable: true
+    wordcount: true    # word count, one article
+    min2read: true     # time to read, one article
+
+  author_label:
+    enable: true
+    auto: true         # if true, show Lv1, Lv2, Lv3... , If false, show custom label
+    # label array item can be one or more
+    custom_label_list: [ "FE Trainee", "FE Engineer", "FE Architect", "CTO", "BOSS" ]
+
+
+# ---------------------------------------------------------------------------------------
+# Code copy
+# ---------------------------------------------------------------------------------------
+code_copy:
+  enable: true
+  style: mac        # values: default | mac
+
+
+# ---------------------------------------------------------------------------------------
+# Table of Contents in the Sidebar
+# ---------------------------------------------------------------------------------------
+toc:
+  enable: true
+
+  # Automatically add list number to toc.
+  number: true
+
+  # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+  expand_all: true
+
+  # If true, open TOC every time when you enter the article page
+  init_open: true
+
+
+# ---------------------------------------------------------------------------------------
+# Post copyright info
+# ---------------------------------------------------------------------------------------
+copyright_info:
+  enable: true
+
+
+# ---------------------------------------------------------------------------------------
+# Website count
+# ---------------------------------------------------------------------------------------
+website_count:
+  # busuanzi
+  # See: http://ibruce.info/2015/04/04/busuanzi/
+  busuanzi_count:
+    enable: true
+    site_uv: true
+    site_pv: true
+    page_pv: true
+
+
+# ---------------------------------------------------------------------------------------
+# Local Search
+# Dependencies: hexo-generator-searchdb
+# See: https://github.com/theme-next/hexo-generator-searchdb
+# ---------------------------------------------------------------------------------------
+local_search:
+  enable: true
+  preload: true     # Preload the search data when the page loads
+
+
+# ---------------------------------------------------------------------------------------
+# Comment plugin
+# ---------------------------------------------------------------------------------------
+comment:
+  enable: true
+  use: gitalk       # values: valine | gitalk | twikoo
+
+  # Valine
+  # See: https://github.com/xCss/Valine
+  valine:
+    appid: ih2nzG3ilVNdLgJK4kBXTjOq-gzGzoHsz
+    appkey: gdf6tXXLBTLg9qpjS2y6Tbw7
+    placeholder: 😜 来吐槽吧~
+
+  # Gitalk
+  # See: https://github.com/gitalk/gitalk
+  gitalk:
+    github_id: XPoet
+    repository: keep-site-comments
+    client_id: 5550967be8a5e25fc735
+    client_secret: e87b865e53fb5843b570f8f016e4684f524a02aa
+
+  # Twikoo
+  # See: https://github.com/imaegoo/twikoo
+  twikoo:
+    env_id: xpoet-cloudbase-7gzhut7a0bb4b751 # Tencent Cloud environment id
+    region:                                  # environment region If select Guangzhou, fill in "ap-guangzhou"
+
+
+# ---------------------------------------------------------------------------------------
+# RSS
+# Dependencies: hexo-generator-feed
+# See: https://github.com/hexojs/hexo-generator-feed
+# ---------------------------------------------------------------------------------------
+rss:
+  enable: true
+
+
+# ---------------------------------------------------------------------------------------
+# Lazyload image
+# ---------------------------------------------------------------------------------------
+lazyload:
+  enable: true
+
+
+# ---------------------------------------------------------------------------------------
+# CDN
+# ---------------------------------------------------------------------------------------
+cdn:
+  enable: false
+
+
+# ---------------------------------------------------------------------------------------
+# PJAX
+# ---------------------------------------------------------------------------------------
+pjax:
+  enable: true
+
+
+# ---------------------------------------------------------------------------------------
+# Footer settings
+# ---------------------------------------------------------------------------------------
+footer:
+  since: 2022
+  icp:
+
+
+# ---------------------------------------------------------------------------------------
+# Keep version (Please don't modify)
+# ---------------------------------------------------------------------------------------
+version: 3.4.5
