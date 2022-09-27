@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: Keep Theme
+subtitle: Keep theme quick starter
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Keep Team
+language: zh-CN  # zh-CN | zh-TW | en
 timezone: ''
 
 # URL
