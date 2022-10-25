@@ -1,152 +1,190 @@
+## ======================================================================================
+## Keep v3.5.1
+## Repository: https://github.com/XPoet/hexo-theme-keep
+## Document: https://keep-docs.xpoet.cn
+## ======================================================================================
+
 # ---------------------------------------------------------------------------------------
 #  Your basic info
 # ---------------------------------------------------------------------------------------
 base_info:
-  # Your website title
+  # Your blog website title
   title: Keep Theme
 
-  # Your blog author name
+  # Your blog website author name
   author: Keep Team
 
-  # Your website url
-  url: https://keep.xpoet.cn/
-
-  # Your website logo
-  logo_img: /images/logo.svg
-
+  # Your blog website url
+  url: https://xpoet.cn/
 
 # ---------------------------------------------------------------------------------------
 # Theme style settings
 # ---------------------------------------------------------------------------------------
 style:
   # Theme primary color
-  primary_color: '#0066CC'
+  primary_color: "#0066CC"
 
-  # Avatar (You can use local image or image external link)
-  avatar: /images/avatar.svg
+  # Your blog website logo image
+  # You can use local image, image external link or don’t fill
+  logo: /images/logo.svg
 
   # Favicon (You can use local image or image external link)
   favicon: /images/logo.svg
 
-  # Image align position, value: left | center
-  article_img_align: left
+  # Avatar (You can use local image or image external link)
+  avatar: /images/avatar.svg
 
-  # Left side width
-  left_side_width: 260px
+  # Font size, customize font size. (you don't usually have to fill)
+  # e.g. font_size: 18px
+  font_size:
 
-  # Content area max width
-  content_max_width: 920px
+  # Font family, customize font family. (you don't usually have to fill)
+  # e.g. font_family: STKaiti, STSong, STHeiti
+  font_family:
 
-  # Mouse hover
+  # Mouse hover style settings
   hover:
-    shadow: true
-    scale: false
+    # Shadow effect when the mouse hover.
+    shadow: true  # Option values: true | false
+    # Scale effect when the mouse hovers.
+    scale: false   # Option values: true | false
 
-  # First screen settings
+  # First screen style settings
   first_screen:
-    enable: false
+    enable: false  # Option values: true | false
+
+    # Set transparent background for header.
+    header_transparent: false  # Option values: true | false
+
+    # First screen background image (You can use local image or image external link)
     background_img: /images/bg.svg
+
+    # First screen description
+    # You can use the "||" to begin a newline, maximum is two lines.
     description: Keep writing and Keep loving.
 
-  # Scroll style settings
-  scroll:
-    progress_bar:
-      enable: true
-    percent:
-      enable: false
+    # If you want to customize the first screen font color, you can fill in here (e.g. "#0066CC")
+    # Otherwise use the theme default font color
+    font_color:
 
+    # If enable hitokoto, first screen description is different every time when you enter the site
+    hitokoto:
+      enable: false  # Option values: true | false
+
+  # Page scroll style settings
+  scroll:
+    # Show progress bar in top when page scroll
+    progress_bar:
+      enable: true  # Option values: true | false
+
+    # Show percent when page scroll
+    percent:
+      enable: true  # Option values: true | false
+
+# ---------------------------------------------------------------------------------------
+# Navigation menu
+# ---------------------------------------------------------------------------------------
+# If you want to enable Categories and Tags, you need to create categories and tags pages
+# e.g. `hexo new page categories` or `hexo new page tags`
+menu:
+  Home: /
+  Archives: /archives
+  Categories: /categories
+  Tags: /tags
+  # Links: /links
+  # About: /about
+  # Changelog: /changelog
+  # ......
 
 # ---------------------------------------------------------------------------------------
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact:
-  enable: true
+  enable: false      # Option values: true | false
   links:
-    github: https://github.com/XPoet
-    weixin: https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/FE-Cheerleaders/fe-cheerleaders-poster.2a69nu5y9zms.png
-    qq:              # your QQ QR-Code URL
-    weibo:           # your WeiBo URL
-    zhihu:           # your ZhiHu URL
-    twitter:         # your Twitter URL
-    facebook:        # your Facebook URL
-    email: i@xpoet.cn
-
-
-# ---------------------------------------------------------------------------------------
-# Navigation menu
-# ---------------------------------------------------------------------------------------
-menu:
-  Home: /
-  # Archives: /archives
-  Categories: /categories
-  Tags: /tags
-  # Changelog: /changelog
-  # Links: /links
-  # About: /about
-  # ......
-
+    # Fill in your social platform links here, e.g. [ github: https://github.com/XPoet ]
+    # If you want to click open the picture, you need to add a prefix "img |",
+    # at the same time change your link to the image link.
+    # e.g. [ weixin: img | https://x.com/images/wechat.png ] or [ weixin: img | ./images/wechat.png ]
+    github:          # GitHub
+    weixin:          # WeChat
+    qq:              # QQ
+    weibo:           # WeiBo
+    zhihu:           # ZhiHu
+    twitter:         # Twitter
+    facebook:        # Facebook
+    email:           # Email
 
 # ---------------------------------------------------------------------------------------
 # Home page article block display settings
 # ---------------------------------------------------------------------------------------
 home_article:
+  # Show category in home page article block.
   category:
-    enable: true      # show category in home page article block
-    limit: 3          # max number of categories shown in home page article block
+    enable: true  # Option values: true | false
+    limit: 3       # Max number of categories shown in home page article block
+  # Show tags in home page article block.
   tag:
-    enable: true      # show tags in home page article block
-    limit: 5          # max number of tags shown in home page article block
-
+    enable: true  # Option values: true | false
+    limit: 5       # Max number of tags shown in home page article block
 
 # ---------------------------------------------------------------------------------------
 # Post page Settings
 # ---------------------------------------------------------------------------------------
 post:
+  # Image align position in the post
+  img_align: left  # Option values: left | center
+
   # Post word count
-  # Dependencies: hexo-wordcount (npm install hexo-wordcount)
+  # Dependencies: hexo-wordcount (`npm install hexo-wordcount`)
   # See: https://github.com/willin/hexo-wordcount
   word_count:
-    enable: true
-    wordcount: true    # word count, one article
-    min2read: true     # time to read, one article
+    enable: true       # Option values: true | false
+    wordcount: true    # Word count, one article. Option values: true | false
+    min2read: true     # Time to read, one article. Option values: true | false
 
+  # Author label in the post
   author_label:
-    enable: true
-    auto: true         # if true, show Lv1, Lv2, Lv3... , If false, show custom label
-    # label array item can be one or more
-    custom_label_list: [ "FE Trainee", "FE Engineer", "FE Architect", "CTO", "BOSS" ]
+    enable: true  # Option values: true | false
 
+    # If true, show Lv1, Lv2, Lv3...
+    # If false, show custom_label_list
+    auto: true    # Option values: true | false
+
+    # Label array item can be fill one or more
+    custom_label_list: ["Trainee", "Engineer", "Architect"]
 
 # ---------------------------------------------------------------------------------------
-# Code copy
+# Code block
+# Support code copy and code block collapse
 # ---------------------------------------------------------------------------------------
-code_copy:
-  enable: true
-  style: mac        # values: default | mac
-
+code_block:
+  # Toolbar include: "code copy", "code block collapse" and "code language"
+  tools:
+    enable: true            # Option values: true | false
+    style: default           # Option values: default | mac
+  highlight_theme: default   # Option values: default | obsidian
 
 # ---------------------------------------------------------------------------------------
 # Table of Contents in the Sidebar
 # ---------------------------------------------------------------------------------------
 toc:
-  enable: true
+  enable: true      # Option values: true | false
 
   # Automatically add list number to toc.
-  number: true
+  number: true      # Option values: true | false
 
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: true
+  expand_all: true  # Option values: true | false
 
   # If true, open TOC every time when you enter the article page
-  init_open: true
-
+  init_open: true   # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Post copyright info
 # ---------------------------------------------------------------------------------------
 copyright_info:
-  enable: true
-
+  enable: true      # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Website count
@@ -155,50 +193,60 @@ website_count:
   # busuanzi
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
-    enable: true
-    site_uv: true
-    site_pv: true
-    page_pv: true
-
+    enable: true     # Option values: true | false
+    site_uv: true    # Option values: true | false
+    site_pv: true    # Option values: true | false
+    page_pv: true    # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Local Search
-# Dependencies: hexo-generator-searchdb
+# Dependencies: hexo-generator-searchdb (`npm install hexo-generator-searchdb`)
 # See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
 local_search:
-  enable: true
-  preload: true     # Preload the search data when the page loads
-
+  enable: true   # Option values: true | false
+  preload: true  # Preload the search data when the page loads. Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: true
-  use: gitalk       # values: valine | gitalk | twikoo
+  enable: false   # Option values: true | false
+  use: valine     # Option values: valine | gitalk | twikoo | waline
 
   # Valine
   # See: https://github.com/xCss/Valine
+  #      https://valine.js.org
   valine:
-    appid: ih2nzG3ilVNdLgJK4kBXTjOq-gzGzoHsz
-    appkey: gdf6tXXLBTLg9qpjS2y6Tbw7
-    placeholder: 😜 来吐槽吧~
+    appid:           # Your leancloud application appid
+    appkey:          # Your leancloud application appkey
+    placeholder:     # Input box placeholder
 
   # Gitalk
   # See: https://github.com/gitalk/gitalk
+  #      https://gitalk.github.io
   gitalk:
-    github_id: XPoet
-    repository: keep-site-comments
-    client_id: 5550967be8a5e25fc735
-    client_secret: e87b865e53fb5843b570f8f016e4684f524a02aa
+    github_id:        # GitHub repo owner
+    github_admins:    # GitHub Admins (in Array type), optional.
+    repository:       # Repository name to store issues
+    client_id:        # GitHub Application Client ID
+    client_secret:    # GitHub Application Client Secret
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
+  #      https://twikoo.js.org
   twikoo:
-    env_id: xpoet-cloudbase-7gzhut7a0bb4b751 # Tencent Cloud environment id
-    region:                                  # environment region If select Guangzhou, fill in "ap-guangzhou"
+    env_id:         # Tencent Cloud environment id
+    region:         # Environment region. If select Guangzhou, fill in "ap-guangzhou".
+    version: 1.6.7  # Twikoo version, default use v1.6.7
 
+  # Waline
+  # See: https://github.com/walinejs/waline
+  #      https://waline.js.org/guide/get-started.html
+  waline:
+    server_url:     # Server URL
+    reaction:       # Article reactions
+    version: 2      # Waline version, default use v2
 
 # ---------------------------------------------------------------------------------------
 # RSS
@@ -206,39 +254,31 @@ comment:
 # See: https://github.com/hexojs/hexo-generator-feed
 # ---------------------------------------------------------------------------------------
 rss:
-  enable: true
-
+  enable: false  # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Lazyload image
 # ---------------------------------------------------------------------------------------
 lazyload:
-  enable: true
-
+  enable: true  # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # CDN
 # ---------------------------------------------------------------------------------------
 cdn:
-  enable: false
-
+  enable: true       # Option values: true | false
+  provider: jsdelivr  # Option values: jsdelivr | unpkg
 
 # ---------------------------------------------------------------------------------------
 # PJAX
 # ---------------------------------------------------------------------------------------
 pjax:
-  enable: true
-
+  enable: true  # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Footer settings
 # ---------------------------------------------------------------------------------------
 footer:
-  since: 2022
-  icp:
-
-
-# ---------------------------------------------------------------------------------------
-# Keep version (Please don't modify)
-# ---------------------------------------------------------------------------------------
-version: 3.4.5
+  since: 2020  # the starting year of your website. Can be null
+  icp:         # ICP record number of your website. Can be null
+  upyun:       # If your site is deployed on upyun, your can fill the upyun url. Can be null

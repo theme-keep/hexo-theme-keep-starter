@@ -1,5 +1,6 @@
 ---
 title: Hello World
+date: 2022-10-25 11:40:36
 tags: Hexo
 categories: Hexo
 ---
