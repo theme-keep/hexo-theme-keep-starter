@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-keep-starter",
-  "version": "3.5.2",
+  "version": "3.6.0",
   "private": false,
   "scripts": {
     "server": "hexo clean && hexo server --open",
@@ -32,7 +32,7 @@
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-keep": "^3.5.2",
+    "hexo-theme-keep": "^3.6.0",
     "hexo-wordcount": "^6.0.1"
   }
 }
