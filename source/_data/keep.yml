@@ -1,5 +1,5 @@
 ## ======================================================================================
-## Keep v3.6.0
+## Keep v3.6.1
 ## Preview: https://xpoet.cn
 ## Documents: https://keep-docs.xpoet.cn
 ## Repository: https://github.com/XPoet/hexo-theme-keep
@@ -121,11 +121,11 @@ social_contact:
 home_article:
   # Show category in home page article block
   category:
-    enable: false  # Option values: true | false
+    enable: true  # Option values: true | false
     limit: 3       # Max number of categories shown in home page article block
   # Show tags in home page article block
   tag:
-    enable: false  # Option values: true | false
+    enable: true  # Option values: true | false
     limit: 5       # Max number of tags shown in home page article block
 
 # ---------------------------------------------------------------------------------------
@@ -273,7 +273,7 @@ lazyload:
 # Docs: https://keep-docs.xpoet.cn/tutorial/configuration-guide/cdn.html
 # ---------------------------------------------------------------------------------------
 cdn:
-  enable: true       # Option values: true | false
+  enable: false       # Option values: true | false
   provider: jsdelivr  # Option values: jsdelivr | unpkg
 
 # ---------------------------------------------------------------------------------------

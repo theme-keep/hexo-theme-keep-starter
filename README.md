@@ -1,6 +1,5 @@
 # Keep Theme Starter
 
-
 ## Get start | 快速开始
 
 ### Install dependencies | 安装依赖
@@ -19,8 +18,7 @@ npm run server
 
 Please configure the `source/_data/keep.yml` file.
 
-请对 `source/_data/keep.yml` 文件进行配置。
-
+请在 `source/_data/keep.yml` 文件进行主题配置。
 
 ## Documents | 文档
 
