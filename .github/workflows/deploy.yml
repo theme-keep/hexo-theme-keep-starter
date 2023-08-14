@@ -1,0 +1,20 @@
+name: Deploying Hexo project to GitHub pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build and Deploy
+        uses: theme-keep/hexo-deploy-github-pages-action@master
+        env:
+          PERSONAL_TOKEN: ${{ secrets.HEXO_DEPLOY }}
+          PUBLISH_REPOSITORY: theme-keep/hexo-theme-keep-starter
+          BRANCH: gh-pages
+          PUBLISH_DIR: ./public
