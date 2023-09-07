@@ -1,6 +1,6 @@
 {
-  "name": "keep-theme-starter",
-  "version": "3.7.3",
+  "name": "hexo-theme-keep-starter",
+  "version": "3.7.5",
   "private": false,
   "scripts": {
     "dev": "hexo clean && hexo server --open",
@@ -14,12 +14,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:theme-keep/keep-theme-starter.git"
+    "url": "git+ssh://git@github.com:theme-keep/hexo-theme-keep-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/theme-keep/keep-theme-starter/issues"
+    "url": "https://github.com/theme-keep/hexo-theme-keep-starter/issues"
   },
-  "homepage": "https://github.com/theme-keep/keep-theme-starter#readme",
+  "homepage": "https://github.com/theme-keep/hexo-theme-keep-starter#readme",
   "hexo": {
     "version": "6.3.0"
   },
@@ -34,7 +34,7 @@
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-keep": "^3.7.4",
+    "hexo-theme-keep": "^3.7.5",
     "hexo-wordcount": "^6.0.1"
   }
 }
