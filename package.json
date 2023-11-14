@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/theme-keep/hexo-theme-keep-starter#readme",
   "hexo": {
-    "version": "6.3.0"
+    "version": "7.0.0"
   },
   "dependencies": {
     "hexo": "^7.0.0",

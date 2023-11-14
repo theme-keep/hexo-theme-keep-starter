@@ -2,7 +2,7 @@
 title: Welcome to use Hexo Theme Keep
 date: 2022-10-25 11:40:36
 tags: [Hexo, Keep]
-categories: Hexo
+categories: [Hexo]
 ---
 
 Welcome to use Hexo Theme Keep.
