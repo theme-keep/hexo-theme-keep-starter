@@ -20,4 +20,4 @@ Please configure the `source/_data/keep.yml` file.
 
 ## Documents
 
-https://keep-docs.xpoet.cn/tutorial/configuration-guide/base_info.html
+https://keep-docs.xpoet.cn/basis/configuration-guide/base_info.html
