@@ -1,0 +1,250 @@
+.keep-markdown-body {
+  font-size: 1rem;
+}
+.keep-markdown-body blockquote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 1.4rem 0;
+  padding: 0.8rem;
+  color: var(--text-color-3);
+  background: var(--background-color-2);
+  border-left: 0.4rem solid var(--text-color-4);
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+.keep-markdown-body blockquote p,
+.keep-markdown-body blockquote ul,
+.keep-markdown-body blockquote ol,
+.keep-markdown-body blockquote footer {
+  position: relative;
+  box-sizing: border-box;
+}
+.keep-markdown-body blockquote footer {
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}
+.keep-markdown-body blockquote cite {
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 1rem;
+  color: var(--text-color-4);
+}
+.keep-markdown-body blockquote cite::before {
+  content: '— ';
+}
+.keep-markdown-body p {
+  margin: 0.6rem 0;
+  color: var(--text-color-3);
+  line-height: 2;
+}
+.keep-markdown-body a {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 0.1rem;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  border-bottom: 0.1rem solid var(--text-color-4);
+  outline: 0;
+  cursor: pointer;
+}
+.keep-markdown-body a .fas,
+.keep-markdown-body a .far,
+.keep-markdown-body a .fab {
+  position: relative;
+  margin: 0 0.2rem 0 0.4rem;
+  color: var(--text-color-4);
+  font-size: 0.8rem;
+}
+.keep-markdown-body a:hover {
+  text-decoration: underline;
+}
+.keep-markdown-body a:hover::after {
+  background: var(--primary-color);
+}
+.keep-markdown-body strong {
+  color: var(--text-color-3);
+}
+.keep-markdown-body em {
+  color: var(--text-color-3);
+}
+.keep-markdown-body ul li,
+.keep-markdown-body ol li {
+  margin: 0.3rem 0 0.3rem 1rem;
+  line-height: 2rem;
+}
+.keep-markdown-body ul li {
+  list-style: disc;
+}
+.keep-markdown-body ul li ul li {
+  list-style: circle;
+}
+.keep-markdown-body ul li ul li ul li {
+  list-style: square;
+}
+.keep-markdown-body ol li {
+  list-style: decimal;
+}
+.keep-markdown-body ol li ol li {
+  list-style: upper-alpha;
+}
+.keep-markdown-body ol li ol li ol li {
+  list-style: upper-roman;
+}
+.keep-markdown-body li {
+  color: var(--text-color-3);
+}
+.keep-markdown-body h1,
+.keep-markdown-body h2,
+.keep-markdown-body h3,
+.keep-markdown-body h4,
+.keep-markdown-body h5,
+.keep-markdown-body h6 {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 0.4rem;
+  padding-bottom: 0.2rem;
+  overflow: hidden;
+  color: var(--text-color-2);
+  line-height: 1.5;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid var(--post-h-bottom-border-color);
+keep-tablet()
+}
+.keep-markdown-body h1:hover a.headerlink,
+.keep-markdown-body h2:hover a.headerlink,
+.keep-markdown-body h3:hover a.headerlink,
+.keep-markdown-body h4:hover a.headerlink,
+.keep-markdown-body h5:hover a.headerlink,
+.keep-markdown-body h6:hover a.headerlink {
+  visibility: visible;
+}
+.keep-markdown-body h1 a.headerlink,
+.keep-markdown-body h2 a.headerlink,
+.keep-markdown-body h3 a.headerlink,
+.keep-markdown-body h4 a.headerlink,
+.keep-markdown-body h5 a.headerlink,
+.keep-markdown-body h6 a.headerlink {
+  position: relative;
+  float: right;
+  box-sizing: border-box;
+  margin-left: 0.32rem;
+  padding-top: 0.25rem;
+  color: var(--text-color-4);
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: none;
+  visibility: hidden;
+}
+.keep-markdown-body h1 a.headerlink:hover,
+.keep-markdown-body h2 a.headerlink:hover,
+.keep-markdown-body h3 a.headerlink:hover,
+.keep-markdown-body h4 a.headerlink:hover,
+.keep-markdown-body h5 a.headerlink:hover,
+.keep-markdown-body h6 a.headerlink:hover {
+  color: var(--text-color-3);
+}
+.keep-markdown-body h1 a.headerlink::before,
+.keep-markdown-body h2 a.headerlink::before,
+.keep-markdown-body h3 a.headerlink::before,
+.keep-markdown-body h4 a.headerlink::before,
+.keep-markdown-body h5 a.headerlink::before,
+.keep-markdown-body h6 a.headerlink::before {
+  font-weight: 600;
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0c1';
+}
+.keep-markdown-body h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+keep-tablet()
+}
+.keep-markdown-body h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+keep-tablet()
+}
+.keep-markdown-body h3 {
+  font-weight: 550;
+  font-size: 1.6rem;
+keep-tablet()
+}
+.keep-markdown-body h4 {
+  font-weight: 550;
+  font-size: 1.5rem;
+keep-tablet()
+}
+.keep-markdown-body h5 {
+  font-weight: 500;
+  font-size: 1.28rem;
+keep-tablet()
+}
+.keep-markdown-body h6 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.2;
+keep-tablet()
+}
+.keep-markdown-body img {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
+  box-shadow: 0 0 0.2rem var(--shadow-color);
+  cursor: zoom-in;
+  opacity: 1;
+}
+.keep-markdown-body img.hide {
+  opacity: 0;
+}
+.keep-markdown-body img[lazyload] {
+  margin: 0.8rem auto 0.2rem;
+  zoom: 1 !important;
+}
+.keep-markdown-body > img,
+.keep-markdown-body p > img {
+  margin: var(--post-img-align);
+}
+.keep-markdown-body > .table-container {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow: auto;
+}
+.keep-markdown-body > .table-container table {
+  box-sizing: border-box;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+keep-mobile()
+}
+.keep-markdown-body > .table-container table td,
+.keep-markdown-body > .table-container table th {
+  padding: 0;
+}
+.keep-markdown-body > .table-container table td {
+  color: var(--text-color-3);
+}
+.keep-markdown-body > .table-container table th {
+  color: var(--text-color-2);
+  font-weight: 600;
+}
+.keep-markdown-body > .table-container table td,
+.keep-markdown-body > .table-container table th {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid var(--border-color);
+}
+.keep-markdown-body > .table-container table tr {
+  background-color: var(--background-color-1);
+  border: 0.1rem solid var(--border-color);
+}
+.keep-markdown-body > .table-container table tr:nth-child(2n) {
+  background-color: var(--background-color-2);
+}
+.keep-markdown-body .mermaid {
+  background: #f5f5f5 !important;
+  border-radius: 0.3rem;
+}

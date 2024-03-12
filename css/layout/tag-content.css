@@ -1,0 +1,11 @@
+.tag-container .tag-name {
+  margin-bottom: var(--component-gap);
+  color: var(--text-color-2);
+  font-weight: 600;
+  font-size: 1.5rem;
+keep-tablet()
+keep-mobile()
+}
+.tag-container .tag-name i {
+  color: var(--text-color-2);
+}

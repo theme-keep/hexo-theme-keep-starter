@@ -1,0 +1,78 @@
+.keep-button {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto 0.6rem;
+  padding: 0.6rem 1rem;
+  color: var(--text-color-3);
+  font-size: 1rem;
+  background: var(--background-color-1);
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.2rem 0.4rem var(--shadow-color);
+  cursor: pointer;
+}
+.keep-button i {
+  color: var(--text-color-3);
+}
+.keep-button:hover {
+  color: var(--background-color-1);
+  background: var(--primary-color);
+}
+.keep-button:hover i {
+  color: var(--background-color-1);
+}
+.keep-button.size-small {
+  margin: auto 0.3rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem var(--shadow-color);
+}
+.keep-button.size-large {
+  width: 100%;
+  margin: 0.6rem 0;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.2rem 0.5rem var(--shadow-color);
+}
+.keep-button.color-info {
+  color: var(--text-color-3);
+  background-color: var(--background-color-1);
+}
+.keep-button.color-info:hover {
+  color: var(--background-color-1);
+  background: var(--primary-color);
+}
+.keep-button.color-primary {
+  color: var(--keep-primary-color);
+  background-color: var(--keep-primary-background-color);
+}
+.keep-button.color-primary:hover {
+  color: #fff;
+  background-color: var(--keep-primary-color);
+}
+.keep-button.color-success {
+  color: var(--keep-success-color);
+  background-color: var(--keep-success-background-color);
+}
+.keep-button.color-success:hover {
+  color: #fff;
+  background-color: var(--keep-success-color);
+}
+.keep-button.color-warning {
+  color: var(--keep-warning-color);
+  background-color: var(--keep-warning-background-color);
+}
+.keep-button.color-warning:hover {
+  color: #fff;
+  background-color: var(--keep-warning-color);
+}
+.keep-button.color-danger {
+  color: var(--keep-danger-color);
+  background-color: var(--keep-danger-background-color);
+}
+.keep-button.color-danger:hover {
+  color: #fff;
+  background-color: var(--keep-danger-color);
+}
