@@ -1,0 +1,295 @@
+:root {
+  --toolbar-foreground: #50505c;
+  --toolbar-background: #f0f0f0;
+  --code-foreground: #585865;
+  --code-background: rgba(0,102,204,0.15);
+  --code-border-color: #2994ff;
+  --highlight-background: #fafafa;
+  --highlight-foreground: #535360;
+  --highlight-comment: #8e908c;
+  --highlight-red: #c82829;
+  --highlight-orange: #f5871f;
+  --highlight-yellow: #eab700;
+  --highlight-green: #718c00;
+  --highlight-aqua: #3e999f;
+  --highlight-blue: #4271ae;
+  --highlight-purple: #8959a8;
+  --highlight-gutter-color: #585865;
+  --highlight-gutter-bg-color: #f2f2f2;
+  --mac-toolbar-background-color: #21252b;
+  --shrink-line-foreground: #808091;
+  --shrink-line-background-1: rgba(210,210,210,0.9);
+  --shrink-line-background-2: rgba(225,225,225,0.6);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --toolbar-foreground: #50505c;
+    --toolbar-background: #f0f0f0;
+    --code-foreground: #585865;
+    --code-background: rgba(0,102,204,0.15);
+    --code-border-color: #2994ff;
+    --highlight-background: #fafafa;
+    --highlight-foreground: #535360;
+    --highlight-comment: #8e908c;
+    --highlight-red: #c82829;
+    --highlight-orange: #f5871f;
+    --highlight-yellow: #eab700;
+    --highlight-green: #718c00;
+    --highlight-aqua: #3e999f;
+    --highlight-blue: #4271ae;
+    --highlight-purple: #8959a8;
+    --highlight-gutter-color: #585865;
+    --highlight-gutter-bg-color: #f2f2f2;
+    --mac-toolbar-background-color: #21252b;
+    --shrink-line-foreground: #808091;
+    --shrink-line-background-1: rgba(210,210,210,0.9);
+    --shrink-line-background-2: rgba(225,225,225,0.6);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --toolbar-foreground: #adbac5;
+    --toolbar-background: #313842;
+    --code-foreground: #b5c1cb;
+    --code-background: rgba(0,102,204,0.15);
+    --code-border-color: #003d7a;
+    --highlight-background: #1f242a;
+    --highlight-foreground: #afbbc6;
+    --highlight-comment: #969896;
+    --highlight-red: #c66;
+    --highlight-orange: #de935f;
+    --highlight-yellow: #f0c674;
+    --highlight-green: #b5bd68;
+    --highlight-aqua: #8abeb7;
+    --highlight-blue: #81a2be;
+    --highlight-purple: #b294bb;
+    --highlight-gutter-color: #b1bdc8;
+    --highlight-gutter-bg-color: #1f2329;
+    --mac-toolbar-background-color: #1f2021;
+    --shrink-line-foreground: #6c8397;
+    --shrink-line-background-1: rgba(38,38,38,0.9);
+    --shrink-line-background-2: rgba(52,52,52,0.6);
+  }
+}
+.light-mode {
+  --toolbar-foreground: #50505c;
+  --toolbar-background: #f0f0f0;
+  --code-foreground: #585865;
+  --code-background: rgba(0,102,204,0.15);
+  --code-border-color: #2994ff;
+  --highlight-background: #fafafa;
+  --highlight-foreground: #535360;
+  --highlight-comment: #8e908c;
+  --highlight-red: #c82829;
+  --highlight-orange: #f5871f;
+  --highlight-yellow: #eab700;
+  --highlight-green: #718c00;
+  --highlight-aqua: #3e999f;
+  --highlight-blue: #4271ae;
+  --highlight-purple: #8959a8;
+  --highlight-gutter-color: #585865;
+  --highlight-gutter-bg-color: #f2f2f2;
+  --mac-toolbar-background-color: #21252b;
+  --shrink-line-foreground: #808091;
+  --shrink-line-background-1: rgba(210,210,210,0.9);
+  --shrink-line-background-2: rgba(225,225,225,0.6);
+}
+.dark-mode {
+  --toolbar-foreground: #adbac5;
+  --toolbar-background: #313842;
+  --code-foreground: #b5c1cb;
+  --code-background: rgba(0,102,204,0.15);
+  --code-border-color: #003d7a;
+  --highlight-background: #1f242a;
+  --highlight-foreground: #afbbc6;
+  --highlight-comment: #969896;
+  --highlight-red: #c66;
+  --highlight-orange: #de935f;
+  --highlight-yellow: #f0c674;
+  --highlight-green: #b5bd68;
+  --highlight-aqua: #8abeb7;
+  --highlight-blue: #81a2be;
+  --highlight-purple: #b294bb;
+  --highlight-gutter-color: #b1bdc8;
+  --highlight-gutter-bg-color: #1f2329;
+  --mac-toolbar-background-color: #1f2021;
+  --shrink-line-foreground: #6c8397;
+  --shrink-line-background-1: rgba(38,38,38,0.9);
+  --shrink-line-background-2: rgba(52,52,52,0.6);
+}
+.code-block,
+pre,
+.highlight {
+  margin: 1.5rem 0;
+  padding: 0;
+  overflow: auto;
+  color: var(--highlight-foreground);
+  font-size: 0.96rem;
+  line-height: 1.5rem;
+  background: var(--highlight-background);
+}
+pre,
+code {
+  font-family: "Source Code Pro", consolas, Menlo;
+}
+code {
+  box-sizing: border-box;
+  padding: 0.3rem 0.4rem;
+  color: var(--code-foreground);
+  font-size: 0.88rem;
+  word-wrap: break-word;
+  background: var(--code-background);
+  border: 0.1rem solid var(--code-border-color);
+  border-radius: 0.3rem;
+}
+pre {
+  padding: 0.6rem;
+}
+pre code {
+  padding: 0;
+  color: var(--highlight-foreground);
+  text-shadow: none;
+  background: none;
+}
+.highlight {
+  border-bottom-right-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+}
+.highlight pre {
+  margin: 0;
+  padding: 0.6rem 0;
+  border: none;
+}
+.highlight table {
+  width: auto;
+  margin: 0;
+  border: none;
+  border-spacing: unset;
+}
+.highlight td {
+  padding: 0;
+  border: none;
+}
+.highlight figcaption {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  color: var(--highlight-foreground);
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.highlight figcaption a {
+  float: right;
+  color: var(--highlight-foreground);
+  font-size: 0.9rem;
+}
+.highlight figcaption a:hover {
+  border-bottom-color: var(--highlight-foreground);
+}
+.highlight .gutter pre {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  color: var(--highlight-gutter-color);
+  text-align: center;
+  background-color: var(--highlight-gutter-bg-color);
+}
+.highlight .code pre {
+  width: 100%;
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  background-color: var(--highlight-background);
+}
+.highlight .line {
+  height: 1.5rem;
+  color: var(--highlight-foreground);
+}
+.highlight .line .language-javascript {
+  color: var(--highlight-foreground);
+}
+.highlight .line .attr {
+  color: var(--highlight-foreground);
+}
+.highlight .line .string {
+  color: var(--highlight-foreground);
+}
+.gutter {
+  color: var(--highlight-gutter-color);
+  background: var(--highlight-gutter-bg-color);
+}
+.gutter .line {
+  color: var(--highlight-gutter-color);
+}
+.gist table {
+  width: auto;
+}
+.gist table td {
+  border: none;
+}
+pre .deletion {
+  background: var(--highlight-deletion);
+}
+pre .addition {
+  background: var(--highlight-addition);
+}
+pre .meta {
+  color: var(--highlight-purple);
+}
+pre .comment {
+  color: var(--highlight-comment);
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: var(--highlight-red);
+}
+pre .property {
+  color: var(--highlight-blue);
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant,
+pre .command {
+  color: var(--highlight-orange);
+}
+pre .ruby .class .title,
+pre .css .rules .attribute,
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata,
+pre .special,
+pre .number,
+pre .formula {
+  color: var(--highlight-green);
+}
+pre .title,
+pre .css .hexcolor {
+  color: var(--highlight-aqua);
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: var(--highlight-blue);
+}
+pre .keyword,
+pre .javascript .function {
+  color: var(--highlight-purple);
+}
