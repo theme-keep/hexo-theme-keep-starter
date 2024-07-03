@@ -11,6 +11,8 @@ This is your very first post. Check [documentation](https://keep-docs.xpoet.cn/)
 
 <!-- more -->
 
+![keep-slogan](/images/keep-slogan.svg)
+
 ## Quick Start
 
 ### Create a new post
