@@ -133,10 +133,8 @@ post:
     custom_badge: ["One", "Two", "Three"]
 
   # Post word count
-  # Depend on Hexo Plugin: hexo-wordcount (`npm install hexo-wordcount`)
-  # See: https://github.com/willin/hexo-wordcount
   word_count:
-    wordcount: true     # Word count, one post. Option values: true | false
+    word: true     # Word count, one post. Option values: true | false
     min2read: true      # Time to read, one post. Option values: true | false
 
   # Post datetime
@@ -153,6 +151,7 @@ post:
     enable: false        # Option values: true | false
     img_link:            # Image link for the payment QR code
     text:                # Custom reward text, Can be null
+    icon:                # Custom reward icon, Can be null
 
 
 # ---------------------------------------------------------------------------------------
@@ -200,8 +199,6 @@ website_count:
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/local_search.html
-# Depend on Hexo Plugin: hexo-generator-searchdb (`npm install hexo-generator-searchdb`)
-# See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
 local_search:
   enable: true   # Option values: true | false
@@ -241,15 +238,15 @@ comment:
   twikoo:
     env_id:          # Environment ID
     region:          # Environment region, Can be null
-    version: 1.6.36  # Twikoo version, default use v1.6.36
+    version: 2.0.8   # Twikoo version, default use v2.0.8
 
   # Waline
   # See: https://github.com/walinejs/waline
-  #      https://waline.js.org/guide/get-started.html
+  #      https://waline.js.org
   waline:
     server_url:         # Server URL
-    reaction: false     # Post reactions, Option values: true | false
-    version: 3.2.1      # Waline version, default use v3
+    reaction: false     # Post reactions, option values: true | false
+    version: 3.15.2      # Waline version, default use v3.15.2
 
   # Giscus
   # See: https://github.com/giscus/giscus
@@ -296,6 +293,11 @@ lazyload:
 cdn:
   enable: false       # Option values: true | false
   provider: cdnjs     # Option values: cdnjs | jsdelivr | unpkg
+  custom:
+    enable: false     # Option values: true | false
+    url:              # Your custom cdn url, eg: https://cdn.com/npm/hexo-theme-keep
+
+
 
 
 # ---------------------------------------------------------------------------------------
@@ -334,13 +336,13 @@ inject:
   enable: false  # Option values: true | false
   css:
     -
-      # e.g.
-      # - /css/custom-1.css
-      # - /css/custom-2.css
+    # e.g.
+    # - /css/custom-1.css
+    # - /css/custom-2.css
     # - ...
   js:
     -
-      # e.g.
-      # - /js/custom-1.js
-      # - /js/custom-2.js
+    # e.g.
+    # - /js/custom-1.js
+    # - /js/custom-2.js
     # - ...

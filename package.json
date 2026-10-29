@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-keep-starter",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "private": false,
   "scripts": {
     "dev": "hexo clean && hexo server --open",
@@ -21,20 +21,18 @@
   },
   "homepage": "https://github.com/theme-keep/hexo-theme-keep-starter#readme",
   "hexo": {
-    "version": "7.0.0"
+    "version": "8.1.2"
   },
   "dependencies": {
-    "hexo": "^7.0.0",
+    "hexo": "^8.1.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-index": "^4.0.0",
-    "hexo-generator-searchdb": "^1.4.0",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^7.0.1",
-    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-keep": "^4.3.0",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-theme-keep": "^4.4.0"
   }
 }
