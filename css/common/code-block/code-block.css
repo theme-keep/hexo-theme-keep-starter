@@ -1,0 +1,121 @@
+.highlight-container {
+  position: relative;
+  box-sizing: border-box;
+  margin: 1.4rem 0;
+}
+.highlight-container.mac {
+  margin: 1.4rem 0 1.8rem 0;
+  box-shadow: 0 0.8rem 2rem 0 rgba(0,0,0,0.4);
+}
+.highlight-container.mac:hover .code-tools-box .copy {
+  opacity: 1;
+}
+.highlight-container.mac .code-tools-box {
+  justify-content: flex-end;
+  padding: 0.4rem 0.6rem 0.7rem 0.4rem;
+  background: var(--mac-toolbar-background-color);
+}
+.highlight-container.mac .code-tools-box::before {
+  position: absolute;
+  left: 0.8rem;
+  width: 0.76rem;
+  height: 0.76rem;
+  background: #fc625d;
+  border-radius: 50%;
+  box-shadow: 1.3rem 0 #fdbc40, 2.6rem 0 #35cd4b;
+  content: '';
+}
+.highlight-container.mac .code-tools-box.folded {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.highlight-container.mac .code-tools-box.folded .copy {
+  display: none;
+}
+.highlight-container.mac .code-tools-box .code-lang {
+  order: 1;
+  color: #bbb;
+}
+.highlight-container.mac .code-tools-box .fold {
+  order: 2;
+  padding: 0 0.1rem 0 0.6rem;
+}
+.highlight-container.mac .code-tools-box .fold i {
+  color: #ccc;
+}
+.highlight-container.mac .code-tools-box .copy {
+  position: absolute;
+  top: 3rem;
+  right: 0.5rem;
+  box-sizing: border-box;
+  padding: 0 0.1rem;
+  opacity: 0;
+}
+.highlight-container.mac .code-tools-box .copy i {
+  font-size: 1rem;
+}
+.highlight-container .code-tools-box {
+  position: relative;
+  z-index: $z-index-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3rem 0.4rem;
+  color: var(--toolbar-foreground);
+  background: var(--toolbar-background);
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+.highlight-container .code-tools-box.folded {
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.highlight-container .code-tools-box .code-lang {
+  justify-content: flex-start;
+  margin-left: 0.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: "Source Code Pro", consolas, Menlo;
+  color: var(--text-color-3);
+}
+.highlight-container .code-tools-box .tool {
+  cursor: pointer;
+}
+.highlight-container .code-tools-box .tool i {
+  font-size: 0.9rem;
+  color: var(--text-color-3);
+}
+.highlight-container .code-tools-box .fold {
+  padding: 0 0.4rem 0 0.2rem;
+}
+.highlight-container figure.highlight {
+  margin: 0;
+}
+.highlight-container figure.highlight.folded {
+  height: 0 !important;
+}
+figure.highlight {
+  position: relative;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+figure.highlight .shrink-line {
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: linear-gradient(to bottom, var(--shrink-line-background-1), var(--shrink-line-background-2));
+  cursor: pointer;
+}
+figure.highlight .shrink-line::before {
+  color: var(--text-color-4);
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Font Awesome 6 Free';
+  content: '\f103';
+}
+figure.highlight .shrink-line:hover::before {
+  font-size: 1.1rem;
+}
